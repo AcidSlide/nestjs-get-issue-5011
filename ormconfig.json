@@ -1,0 +1,70 @@
+[
+   {
+      "name": "default",
+      "type": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "username": "root",
+      "password": "password",
+      "database": "mercury_api_test",
+      "synchronize": false,
+      "logging": false,
+      "migrations": [
+         "src/**/migration/*.migration.ts"
+      ],
+      "cli": {
+         "migrationsDir": "src/**/migration/*.migration.ts"
+      }
+   },
+   {
+      "name": "create",
+      "type": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "username": "root",
+      "password": "password",
+      "database": "mercury_api_test",
+      "synchronize": false,
+      "logging": false,
+      "migrations": [
+         "src/**/migration/create/*.migration.ts"
+      ],
+      "cli": {
+         "migrationsDir": "src/**/migration/create/*.migration.ts"
+      }
+   },
+   {
+      "name": "insert",
+      "type": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "username": "root",
+      "password": "password",
+      "database": "mercury_api_test",
+      "synchronize": false,
+      "logging": false,
+      "migrations": [
+         "src/**/migration/insert/*.migration.ts"
+      ],
+      "cli": {
+         "migrationsDir": "src/**/migration/insert/*.migration.ts"
+      }
+   },
+   {
+      "name": "alter",
+      "type": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "username": "root",
+      "password": "password",
+      "database": "mercury_api_test",
+      "synchronize": false,
+      "logging": false,
+      "migrations": [
+         "src/**/migration/alter/*.migration.ts"
+      ],
+      "cli": {
+         "migrationsDir": "src/**/migration/alter/*.migration.ts"
+      }
+   }
+]
